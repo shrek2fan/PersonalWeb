@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title and external CSS link -->
+    <title>Jason Ovalle</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <!-- Video header section -->
+    <div class="video-header">
+        <!-- Video element with autoplay, muted, and loop attributes -->
+        <video autoplay muted loop id="myVideo">
+            <!-- Video source -->
+            <source src="sky.mp4" type="video/mp4">
+        </video>
+        <!-- Overlay content over the video -->
+        <div class="overlay-content">
+            <!-- Title for the video content -->
+            <h1>a few photos</h1>
+            <!-- Subtitle or description -->
+            <p>by Jay</p>
+        </div>
+    </div>
+
+    <!-- Main content wrapper -->
+    <div class="content-wrapper">
+    
+        <!-- Carousel for image slides -->
+        <div class="carousel">
+            <!-- Container for carousel slides -->
+            <div class="carousel-slides">
+                <!-- Individual slides with images -->
+                <div class="slide"><img src="Garden1.JPG" alt="Photo 1"></div>
+                <div class="slide"><img src="Amador1.jpeg" alt="Photo 7"></div>
+                <div class="slide"><img src="Amador2.jpeg" alt="Photo 2"></div>
+                <div class="slide"><img src="Amador3.jpeg" alt="Photo 3"></div>
+                <div class="slide"><img src="Texas1.jpeg" alt="Photo 4"></div> 
+                <div class="slide"><img src="Amador4.jpeg" alt="Photo 5"></div>
+                <div class="slide"><img src="Amador5.JPG" alt="Photo 6"></div>
+                <div class="slide"><img src="Garden2.jpg" alt="Photo 8"></div>
+                <div class="slide"><img src="Garden3.jpg" alt="Photo 9"></div>
+                <div class="slide"><img src="Kitten1.jpg" alt="Photo 10"></div>
+                <div class="slide"><img src="Amador6.JPG" alt="Photo 11"></div>
+                <!-- More slides... -->
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Navigation buttons for the carousel -->
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+    
+        <!-- Link to external JavaScript file for functionality -->
+        <script src="scripts.js"></script>
+
+        <!-- Spacer div for layout -->
+        <div class="push"></div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <!-- Footer content -->
+        <div class="footer-content">
+            <!-- Text or title in the footer -->
+            <p>Live and Capture</p>
+            <!-- Social media links or icons -->
+            <a href="https://www.twitter.com/shrektwofan" class="X-icon">
+                <img src="Xlogo.png" alt="X.com">
+            </a>
+            <a href="https://www.twitch.tv/shrektwofan" class ="twitch-icon">
+                <img src="TWITCHlogo.png" alt="twitch-icon">
+            </a>
+            <a href="https://github.com/shrek2fan" class ="github-icon">
+                <img src="GITlogo.png" alt="github-icon">
+            </a>  
+
+            <!-- Button to toggle dark/light theme -->
+            <button id="themeToggle">Toggle Dark/Light Theme</button>
+        </div>
+    </footer>
+
+</body>
+</html>

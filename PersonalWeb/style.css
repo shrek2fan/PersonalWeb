@@ -1,0 +1,280 @@
+/* Light Theme Styles */
+body {
+    background-color: white; /* Background color for light theme */
+    color: black; /* Text color for light theme */
+    /* other light theme styles */
+}
+
+/* Dark Theme Styles */
+body.dark {
+    background-color: black; /* Background color for dark theme */
+    color: white; /* Text color for dark theme */
+    /* other dark theme styles */
+}
+
+/* Default font for code elements */
+code {
+    font-family: Courier, monospace;
+}
+
+/* Reset and Normalize Styles */
+/* Ensures consistent text size and line height across browsers */
+html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+}
+
+/* Sets the default height of the HTML and body elements to full height and removes default margin */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Style for h1 elements */
+h1 {
+    font-size: 2em; /* Font size for h1 elements */
+    margin: 0.67em 0; /* Top and bottom margin for h1 */
+}
+
+/* Style for anchor tags */
+a {
+    background-color: transparent; /* Transparent background for links */
+}
+
+/* Style for strong (bold) text */
+strong {
+    font-weight: bold;
+}
+
+/* Styles for content wrapper */
+.content-wrapper {
+    min-height: 100%; /* Minimum height to fill the viewport */
+    margin-bottom: -50px; /* Negative margin equal to footer height */
+}
+
+/* Style for images */
+img {
+    border-style: none; /* Removes default border from images */
+}
+
+/* Basic form styles */
+/* Applies default styles to form elements */
+input,
+select,
+textarea {
+    font-family: inherit; /* Inherits font family from parent */
+    margin: 0; /* Removes default margin */
+}
+
+/* Utility Classes */
+/* Class to hide elements */
+.hidden {
+    display: none !important;
+}
+
+/* Class to show elements */
+.visible {
+    display: block !important;
+}
+
+/* Dropdown Button Styles */
+.dropbtn {
+    background-color: #f581c4; /* Button background color */
+    color: white; /* Button text color */
+    padding: 16px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to pointer */
+    border-radius: 0.25rem; /* Rounded corners */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative; /* Positions dropdown relative to its container */
+    display: inline-block; /* Dropdown displays inline-block */
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned absolutely to its parent */
+    background-color: #c236fa; /* Background color of dropdown content */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+    z-index: 1; /* Ensures dropdown appears above other elements */
+}
+
+/* Dropdown Link Styles */
+.dropdown-content a {
+    color: black; /* Text color for dropdown links */
+    padding: 12px 16px; /* Padding inside each link */
+    text-decoration: none; /* Removes underline from links */
+    display: block; /* Each link displays as block */
+}
+
+/* Hover styles for dropdown links */
+.dropdown-content a:hover {background-color: #f581c4}
+
+/* Hover styles for dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block; /* Shows dropdown content on hover */
+}
+.dropdown:hover .dropbtn {
+    background-color: #c236fa; /* Changes button color on hover */
+}
+
+/* Style for the cat image inside the dropdown button */
+.dropbtn img {
+    width: 50px; /* Width of the image */
+    height: auto; /* Auto height to maintain aspect ratio */
+}
+
+/* Style for the X-icon images */
+.X-icon img, .twitch-icon img, .github-icon img {
+    width: 50px; /* Width of the image */
+    height: auto; /* Auto height to maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+.X-icon:hover img, .twitch-icon:hover img, .github-icon:hover img {
+    opacity: 0.7; /* Opacity on hover */
+}
+
+/* Carousel Styles */
+.carousel { position: relative; }
+.carousel-slides { display: flex; overflow: hidden; }
+.slide { flex: 0 0 100%; }
+.slide img { width: 100%; }
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Video Header Styles */
+.video-header {
+    position: relative;
+    height: 250px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+/* Style for the video element */
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Overlay Content Styles */
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.overlay-content h1 {
+    font-size: 2em;
+}
+.overlay-content p {
+    font-size: 1.2em;
+}
+
+/* Push Div Style */
+.push {
+    height: 50px; /* Same height as footer */
+}
+
+/* Footer Styles */
+.footer {
+    position: sticky; /* Sticks to the bottom of the viewport */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: purple; /* Background color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer Content Styles */
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer Background Image */
+.footer::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Flower.png');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+/* Video Container Styles */
+.video-container {
+    border: 3px solid #ccc; /* Border style */
+    padding: 10px;
+    max-width: 560px; /* Maximum width */
+    margin: 20px auto; /* Margin for centering */
+}
+
+/* Iframe styles within video container */
+.video-container iframe {
+    width: 100%; /* Full width */
+    height: 315px; /* Fixed height */
+}
+
+/* Biography Section Styles */
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the section */
+}
+
+/* Biography Image Styles */
+.bio-image {
+    width: 150px; /* Width of the image */
+    height: 150px; /* Height of the image */
+    border-radius: 50%; /* Circular shape */
+    margin-right: 20px; /* Margin to the right of the image */
+}
+
+/* Styles for h2 in biography text */
+.bio-text h2 {
+    margin: 0;
+}
+
+/* Paragraph styles in biography text */
+.bio-text p {
+    margin-top: 10px;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    text-align: center; /* Centers the content */
+    padding: 20px; /* Padding around the content */
+}
+.contact-info h1 {
+    margin-bottom: 10px; /* Margin below the title */
+}
+.contact-info p {
+    font-size: 1em; /* Font size for the paragraph */
+}
